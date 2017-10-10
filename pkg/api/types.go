@@ -1045,6 +1045,9 @@ type CephFSVolumeSource struct {
 	// the ReadOnly setting in VolumeMounts.
 	// +optional
 	ReadOnly bool
+	// Optional: Defaults to false. Fuse here will force to mount cephfs using fuse.
+	// +optional
+	Fuse bool
 }
 
 // SecretReference represents a Secret Reference. It has enough information to retrieve secret
