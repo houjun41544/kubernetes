@@ -1082,6 +1082,9 @@ type CephFSPersistentVolumeSource struct {
 	// the ReadOnly setting in VolumeMounts.
 	// +optional
 	ReadOnly bool
+	// Optional: Defaults to false. Fuse here will force to mount cephfs using fuse.
+	// +optional
+	Fuse bool
 }
 
 // Represents a Flocker volume mounted by the Flocker agent.
